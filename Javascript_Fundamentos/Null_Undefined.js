@@ -1,3 +1,5 @@
+//Atribuição por referência é a = algo, a tem o link do endereço de memoria, onde está os valores
+
 let n_iniciada // uma variável não iniciada, está sem valor
 console.log(n_iniciada)
 
