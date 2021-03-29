@@ -16,6 +16,15 @@ function testando (){
     console.log(local)
 }
 
+
+// Exemplo 2
+var numero = 1
+{
+    var numero = 2
+    console.log('dentro = ', numero)
+}
+console.log('fora = ', numero)
+
 //testando()
 //console.log(local)
 
