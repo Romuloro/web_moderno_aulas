@@ -7,7 +7,7 @@ console.log(typeof peso1, typeof peso2)
  let prova1 = 8.45
  let prova2 = 6.78
 
- nota_media_ponderada = ((prova1 * peso1) + (prova2*peso2))/ (peso1 + peso2)
+const nota_media_ponderada = ((prova1 * peso1) + (prova2*peso2))/ (peso1 + peso2)
 console.log('A nota do aluna(o) é :', nota_media_ponderada.toFixed(2))
 
 /*
