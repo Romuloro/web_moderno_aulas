@@ -26,3 +26,5 @@ const carro = {
 }
 
 console.log(carro)
+
+// Objeto constante usar o Object.freeze()
