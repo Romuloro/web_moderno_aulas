@@ -13,7 +13,7 @@ function falarDepoisDe(segundos, frases){
     })
 }
 
-falarDepoisDe(3, 'Bora!!')
+falarDepoisDe(4, 'Bora!!')
     .then(frases => frases.concat('Bora?!'))
     .then(outraFrase => console.log(outraFrase))
     .catch(e => console.log(e))
