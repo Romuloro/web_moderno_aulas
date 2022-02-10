@@ -1,0 +1,13 @@
+body{
+    font-size: 55px;
+}
+
+ul , ol {
+    padding: 1rem;
+}
+
+*{
+    outline: red solid 1px;
+    padding: 0px;
+    margin: 0px;
+}

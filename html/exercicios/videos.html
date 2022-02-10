@@ -1,0 +1,49 @@
+<video id="meuvideo" width="800" height="450" controls controlsList="nodownload">
+    <source src="http://files.cod3r.com.br/curso-web/video.mp4" type="video/mp4">
+</video>
+
+<div rom-progresso="meuvideo" class="progresso">
+    <div></div>
+</div>
+
+<div>
+    <button rom-play="meuvideo">Play</button>
+    <button rom-pause="meuvideo">Pause</button>
+</div>
+
+<style>
+    .progresso{
+        height: 25px;
+        width: 750px;
+        border: solid 1px #444;
+        margin: 20px;
+    }
+
+    .progresso > div{
+        background-color: red;
+        color: aliceblue;
+        height:  100%;
+        text-align: right;
+        font-size: 14px;
+        width: 0%;
+    }
+</style>
+
+<script>
+    const configurarVideo = (id) =>{
+        const video = document.getElementById(id)
+        video.oncontextmenu = () => false
+
+        document.querySelector(`[rom-play = ${id}]`).onclick = e => video.play()
+        document.querySelector(`[rom-pause = ${id}]`).onclick = e => video.pause()
+
+        setInterval(() =>{
+            const percentual = ((video.currentTime / video.duration) * 100).toFixed(1)
+            const valorDiv = document.querySelector(`[rom-progresso = ${id}] > div`)
+            valorDiv.style.width = `${percentual}%`
+            valorDiv.innerHTML = `${percentual}%`
+        }, 500)
+    }
+
+    configurarVideo('meuvideo')
+</script>
