@@ -1,13 +1,29 @@
 body{
-    font-size: 55px;
+    font-size: 65px;
 }
 
 ul , ol {
     padding: 1rem;
 }
 
+li{
+    margin-left: 60px;
+}
+
+.tag{
+    border: solid 3px;
+    margin: 5px;
+}
+
+.tag label{
+    color: aliceblue;
+    font-size: 30px;
+    vertical-align: top;
+    padding: 0px 5px 3px 3px;
+}
+
 *{
-    outline: red solid 1px;
+    outline: rgb(7, 7, 7) solid 1px;
     padding: 0px;
     margin: 0px;
 }
