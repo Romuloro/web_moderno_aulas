@@ -7,11 +7,19 @@
     <style>
         /* https://caniuse.com/#feat=css-grid */
         
-        html,
-        body {
+        html {height: calc(100% - 40px);
+            width: calc(100% - 40px);
+            box-sizing: border-box;
             margin: 20px;
-            height: calc(100% - 40px);
+        }
+        body {
+            height: inherit;
+            width: inherit;
+            margin: 20px;
             background-color: lightgray;
+            display: grid;
+            grid-template-columns: 3fr 6fr 3fr;
+            grid-template-rows: 20% 30% 25% 25%;
         }
         
         div {
@@ -21,6 +29,21 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        * .d8{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .d10,
+        .d11{
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 5;
+            grid-row-end: span 1;
         }
     </style>
 </head>

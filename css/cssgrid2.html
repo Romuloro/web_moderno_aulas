@@ -9,6 +9,7 @@
         body {
             margin: 20px;
             height: calc(100% - 40px);
+            width: calc(100% - 40px);
             background-color: lightgray;
         }
         
@@ -19,6 +20,18 @@
             font-size: 30px;
             border: solid 5px dodgerblue;
             background: #fff;
+        }
+
+        body{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .d1{
+            grid-column: 1 / 4;
+            grid-area: 1/ 2/ 3 / 4;
         }
     </style>
 </head>
