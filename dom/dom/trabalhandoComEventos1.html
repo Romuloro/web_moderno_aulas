@@ -9,9 +9,18 @@
 
 <body class="conteudo exercicio">
     <div>
-        <a href="https://google.com.br">Google</a>
+        <a espera-um-pouco href="https://google.com.br">Google</a>
     </div>
     <script>
-        // ...
+        function navegarEm5s(e){
+            e.preventDefault()
+            console.log('Saindo')
+            setTimeout(() =>{
+                window.location.href = e.target.href
+            }, 5000)
+        }
+
+        const botao = document.querySelector('[espera-um-pouco]')
+        botao.onclick = navegarEm5s
     </script>
 </body>

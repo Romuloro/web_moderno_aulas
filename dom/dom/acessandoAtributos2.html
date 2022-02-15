@@ -17,7 +17,14 @@
         </ul>
     </div>
     <script>
-        // ...
+        const lista = document.querySelector('div ul[destino="escritório"]')
+        console.log(lista.children)
+        console.log(lista.getAttribute('destino'))
+        console.log(lista.hasAttribute('data-urgencia'))
+        lista.setAttribute('status', 'aberto')
+        
+        const label = document.querySelector('label')
+        console.log(label.getAttribute('for'))
     </script>
 </body>
 
